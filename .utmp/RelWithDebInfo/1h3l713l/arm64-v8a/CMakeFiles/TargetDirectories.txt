@@ -1,0 +1,5 @@
+G:/Github/GameProg3/STSVR/.utmp/RelWithDebInfo/1h3l713l/arm64-v8a/CMakeFiles/edit_cache.dir
+G:/Github/GameProg3/STSVR/.utmp/RelWithDebInfo/1h3l713l/arm64-v8a/CMakeFiles/rebuild_cache.dir
+G:/Github/GameProg3/STSVR/.utmp/RelWithDebInfo/1h3l713l/arm64-v8a/GameActivity/CMakeFiles/game.dir
+G:/Github/GameProg3/STSVR/.utmp/RelWithDebInfo/1h3l713l/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+G:/Github/GameProg3/STSVR/.utmp/RelWithDebInfo/1h3l713l/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

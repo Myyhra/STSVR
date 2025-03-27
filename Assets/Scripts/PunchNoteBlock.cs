@@ -17,6 +17,8 @@ public class PunchNoteBlock : MonoBehaviour
 
     public void DestroyNote()
     {
+        PunchBlockManager.Instance.score++;
+        Debug.Log("Score: " + PunchBlockManager.Instance.score);
         Destroy(gameObject);
     }
 
