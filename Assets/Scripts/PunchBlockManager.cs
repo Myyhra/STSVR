@@ -54,6 +54,11 @@ public class PunchBlockManager : MonoBehaviour
     public void EndGame()
     {
         isPlaying = false;
+        GameObject[] obs = GameObject.FindGameObjectsWithTag("PunchBlock");
+        foreach(GameObject obsObj in obs)
+        {
+            Destroy(obsObj);
+        }
     }
 
     IEnumerator SpawnBlock()
@@ -64,15 +69,15 @@ public class PunchBlockManager : MonoBehaviour
         random = UnityEngine.Random.Range(1,3);
         if (random == 1)
         {
+            if (!isPlaying) yield return null;
             Instantiate(leftBlock,leftPunchSpawner.position,Quaternion.identity);
         }
         else
         {
+            if (!isPlaying) yield return null;
             Instantiate(rightBlock,rightPunchSpawner.position, Quaternion.identity);
         }
         isSpawning = false;
-
-        
     }
 
 }
