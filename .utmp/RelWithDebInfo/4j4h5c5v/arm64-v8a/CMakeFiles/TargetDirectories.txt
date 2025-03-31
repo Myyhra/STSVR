@@ -1,0 +1,5 @@
+C:/Users/CIIT/Documents/GitHub/STSVR/.utmp/RelWithDebInfo/4j4h5c5v/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/CIIT/Documents/GitHub/STSVR/.utmp/RelWithDebInfo/4j4h5c5v/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/CIIT/Documents/GitHub/STSVR/.utmp/RelWithDebInfo/4j4h5c5v/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/CIIT/Documents/GitHub/STSVR/.utmp/RelWithDebInfo/4j4h5c5v/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/CIIT/Documents/GitHub/STSVR/.utmp/RelWithDebInfo/4j4h5c5v/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

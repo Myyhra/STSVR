@@ -41,19 +41,22 @@ public class PunchBlockManager : MonoBehaviour
     {
         if(isPlaying)
         {
-            StartGame();
+            if (!isSpawning)
+                StartCoroutine(SpawnBlock());
         }
         textScore.text = "Score: " + score;
     }
 
     public void StartGame()
     {
-        if(!isSpawning)
-        StartCoroutine(SpawnBlock());
+        score = 0;
+        isPlaying = true;
+        
     }
     public void EndGame()
     {
         isPlaying = false;
+        isSpawning = false;
         GameObject[] obs = GameObject.FindGameObjectsWithTag("PunchBlock");
         foreach(GameObject obsObj in obs)
         {
@@ -65,17 +68,21 @@ public class PunchBlockManager : MonoBehaviour
     {
         isSpawning = true;
         yield return new WaitForSeconds(spawnInterval);
+        if (isPlaying)
+        {
         int random = 0;
         random = UnityEngine.Random.Range(1,3);
         if (random == 1)
         {
-            if (!isPlaying) yield return null;
+            
             Instantiate(leftBlock,leftPunchSpawner.position,Quaternion.identity);
         }
         else
         {
-            if (!isPlaying) yield return null;
+            
             Instantiate(rightBlock,rightPunchSpawner.position, Quaternion.identity);
+        }
+
         }
         isSpawning = false;
     }
