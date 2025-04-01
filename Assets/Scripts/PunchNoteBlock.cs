@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PunchNoteBlock : MonoBehaviour
 {
-    public float speed;
-
+    public float xSpeed;
+    public float ySpeed;
     void Start()
     {
         
@@ -12,7 +12,7 @@ public class PunchNoteBlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.left * speed * Time.deltaTime;
+        transform.position += new Vector3(xSpeed,0,ySpeed) * Time.deltaTime;
     }
 
     public void DestroyNote()
