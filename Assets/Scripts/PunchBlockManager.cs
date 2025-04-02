@@ -17,6 +17,8 @@ public class PunchBlockManager : MonoBehaviour
     public bool isSpawning;
 
     [SerializeField] TextMeshProUGUI textScore;
+    [SerializeField] private TextMeshProUGUI TextHighScore;
+    public int highScore;
     public int score;
     void Awake()
     {
@@ -57,10 +59,20 @@ public class PunchBlockManager : MonoBehaviour
     {
         isPlaying = false;
         isSpawning = false;
+        Highscore();
         GameObject[] obs = GameObject.FindGameObjectsWithTag("PunchBlock");
         foreach(GameObject obsObj in obs)
         {
             Destroy(obsObj);
+        }
+    }
+
+    public void Highscore()
+    {
+        if (score >= highScore)
+        {
+            highScore = score;
+            TextHighScore.text = "High Score: " + highScore;
         }
     }
 
